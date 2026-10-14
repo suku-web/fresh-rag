@@ -1,0 +1,5 @@
+FRESH-RAG is a retrieval-augmented generation project.
+The system retrieves relevant information from documents.
+The decision engine evaluates relevance, confidence, and estimated cost.
+The system may abstain when information is unreliable.
+Quality evaluation helps assess answer reliability.
