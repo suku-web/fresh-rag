@@ -1,0 +1,5 @@
+FRESH-RAG is a retrieval-augmented generation system.
+It retrieves relevant information from documents to answer questions.
+The decision engine evaluates relevance and confidence.
+The system considers processing cost.
+Quality evaluation helps determine answer reliability.
