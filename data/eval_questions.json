@@ -1,0 +1,10 @@
+[
+  {
+    "question": "What is FRESH-RAG?",
+    "expected_answer": "FRESH-RAG is a retrieval-augmented generation project."
+  },
+  {
+    "question": "What does the decision engine evaluate?",
+    "expected_answer": "It evaluates relevance, confidence, and estimated cost."
+  }
+]
