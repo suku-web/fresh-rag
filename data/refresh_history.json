@@ -1,0 +1,51 @@
+[
+  {
+    "request_id": "refresh-bf930bb6-3bbb-4046-b896-d7ec955134ba",
+    "type": "refresh",
+    "timestamp": "2026-10-29T02:03:36.443842+00:00",
+    "trigger": "manual",
+    "decision": "REFRESH_NOW",
+    "status": "refreshed",
+    "reason": "Large change detected",
+    "changed_files": [
+      "credit_card_terms.txt",
+      "interest_rates.txt",
+      "kyc_rules.txt",
+      "loan_policy.txt"
+    ],
+    "documents_total": 4,
+    "change_magnitude": 1.0,
+    "estimated_cost": 0.0004,
+    "budget_remaining": 0.9996
+  },
+  {
+    "request_id": "refresh-1bba6883-3319-48c3-adf0-713c2c2cb051",
+    "type": "refresh",
+    "timestamp": "2026-11-03T08:41:34.209807+00:00",
+    "trigger": "manual",
+    "decision": "REFRESH_NOW",
+    "status": "refreshed",
+    "reason": "Documents changed and last sync was 24+ hours ago",
+    "changed_files": [
+      "loan_policy.txt"
+    ],
+    "documents_total": 4,
+    "change_magnitude": 0.25,
+    "estimated_cost": 0.0001,
+    "budget_remaining": 0.9995
+  },
+  {
+    "request_id": "refresh-fca18f66-7829-4ad7-90d2-9ff35593acc1",
+    "type": "refresh",
+    "timestamp": "2026-11-03T08:44:06.757857+00:00",
+    "trigger": "manual",
+    "decision": "SKIP",
+    "status": "skipped",
+    "reason": "No change detected",
+    "changed_files": [],
+    "documents_total": 4,
+    "change_magnitude": 0.0,
+    "estimated_cost": 0.0001,
+    "budget_remaining": 0.9995
+  }
+]

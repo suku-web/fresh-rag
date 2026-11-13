@@ -1,0 +1,15 @@
+{
+  "etags": {
+    "credit_card_terms.txt": "99544307c4a443d12620c2b327341e38",
+    "interest_rates.txt": "4d02386c188eeb5dee3fa06b724a74f2",
+    "kyc_rules.txt": "906b98f52983cf10eecbdf4f018f2a91",
+    "loan_policy.txt": "23edcb75334c7596eef90c1cf3fcff26"
+  },
+  "last_successful_sync": "2026-11-03T08:41:34.209807+00:00",
+  "sync_enabled": true,
+  "job_running": false,
+  "last_checked": "2026-11-03T08:44:06.757857+00:00",
+  "last_decision": "SKIP",
+  "budget_remaining": 0.9995,
+  "currency": "USD"
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRESH-RAG | AI Workspace</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="/" class="brand">
+        <span class="brand-icon">F</span>
+        <span>FRESH-RAG<small>ADAPTIVE KNOWLEDGE</small></span>
+      </a>
+
+      <button class="new-chat" id="new-chat">＋ New conversation</button>
+
+      <p class="nav-label">WORKSPACE</p>
+      <button class="nav-item active" data-page="chat">◈ &nbsp; AI Chat</button>
+      <button class="nav-item" data-page="refresh">⟳ &nbsp; Refresh monitor</button>
+      <button class="nav-item" data-page="whatif">◇ &nbsp; What-if analysis</button>
+
+      <div class="sidebar-bottom">
+        <div class="connection">
+          <span class="status-dot" id="status-dot"></span>
+          <span id="connection-text">Connecting to API...</span>
+        </div>
+        <p class="muted">FRESH-RAG · Adaptive RAG</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">YOUR WORKSPACE</p>
+          <h1 id="page-title">AI Chat</h1>
+        </div>
+        <button class="theme-button" id="theme-toggle">◐ Theme</button>
+      </header>
+
+      <section class="page active" id="page-chat">
+        <div class="chat-intro" id="chat-intro">
+          <div class="hero-icon">✳</div>
+          <p class="eyebrow">YOUR KNOWLEDGE, CONNECTED</p>
+          <h2>Ask better questions.<br><span>Get grounded answers.</span></h2>
+          <p class="muted">Ask about your knowledge documents and get answers grounded in the available context.</p>
+
+          <div class="suggestions">
+            <button class="suggestion" data-question="What information is available in the knowledge document?">
+              <strong>Explore my knowledge</strong>
+              <span>Discover what the documents contain</span>
+            </button>
+            <button class="suggestion" data-question="Summarize the key points in the knowledge document.">
+              <strong>Summarize key points</strong>
+              <span>Get a quick overview</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="messages" id="messages" aria-live="polite"></div>
+
+        <div class="chat-composer">
+          <form id="chat-form">
+            <textarea id="question" rows="2" maxlength="2000"
+              placeholder="Ask anything about your knowledge..." required></textarea>
+            <div class="composer-footer">
+              <span>Enter to send · Shift + Enter for a new line</span>
+              <button class="send-button" id="send-button" type="submit">Send ↗</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="page" id="page-refresh">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SYSTEM OVERVIEW</p>
+            <h2>Knowledge refresh</h2>
+            <p class="muted">Monitor synchronization status and recent decisions.</p>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button class="secondary-button" id="run-refresh">▶ Run check now</button>
+            <button class="secondary-button" id="reload-refresh">↻ Reload</button>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span>Sync enabled</span>
+            <strong id="sync-enabled">—</strong>
+          </article>
+          <article class="stat-card">
+            <span>Job running</span>
+            <strong id="job-running">—</strong>
+          </article>
+          <article class="stat-card">
+            <span>Last successful sync</span>
+            <strong id="last-sync">Not recorded</strong>
+          </article>
+          <article class="stat-card">
+            <span>Budget remaining</span>
+            <strong id="budget">$1.00</strong>
+          </article>
+        </div>
+
+        <article class="panel">
+          <h3>Refresh history</h3>
+          <p class="muted">Recent decisions returned by the API.</p>
+          <div id="history-list" class="history-list">Loading history...</div>
+        </article>
+
+        <p class="notice" id="refresh-notice">Loading refresh status...</p>
+      </section>
+
+      <section class="page" id="page-whatif">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DECISION PLAYGROUND</p>
+            <h2>What-if analysis</h2>
+            <p class="muted">Change the inputs to evaluate a refresh decision.</p>
+          </div>
+        </div>
+
+        <form id="whatif-form" class="panel form-panel">
+          <label>Document changed?
+            <select id="changed">
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+          </label>
+
+          <label>Urgent refresh?
+            <select id="urgent">
+              <option value="false">No</option>
+              <option value="true">Yes</option>
+            </select>
+          </label>
+
+          <label>Change magnitude <output id="magnitude-out">50%</output>
+            <input id="magnitude" type="range" min="0" max="1" step="0.05" value="0.5">
+          </label>
+
+          <label>Current quality score <output id="quality-out">90%</output>
+            <input id="quality" type="range" min="0" max="1" step="0.05" value="0.9">
+          </label>
+
+          <label>Quality drop <output id="drop-out">0%</output>
+            <input id="drop" type="range" min="0" max="1" step="0.05" value="0">
+          </label>
+
+          <label>Hours since last sync
+            <input id="hours" type="number" min="0" value="1" required>
+          </label>
+
+          <label>Estimated sync cost ($)
+            <input id="cost" type="number" min="0" step="0.01" value="0.01" required>
+          </label>
+
+          <label>Remaining budget ($)
+            <input id="budget-input" type="number" min="0" step="0.01" value="1.00" required>
+          </label>
+
+          <button class="primary-button" id="evaluate-button" type="submit">Evaluate decision ↗</button>
+          <div id="evaluation-result" class="evaluation-result hidden" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <span>FRESH-RAG · Adaptive retrieval workspace</span>
+        <span>Decisions follow the configured policy</span>
+      </footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="/static/common.js"></script>
+  <script src="/static/chat.js"></script>
+  <script src="/static/refresh.js"></script>
+</body>
+</html>

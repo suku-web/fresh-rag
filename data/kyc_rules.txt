@@ -1,0 +1,52 @@
+KYC RULES
+
+Document ID: KYC-2026-01
+Version: 1.0
+Effective Date: January 10, 2026
+
+1. CUSTOMER IDENTIFICATION
+
+Customers must provide an accepted identity document during account onboarding.
+
+Customers must provide valid address information.
+
+PAN or an accepted tax identification document is required where applicable.
+
+Submitted documents must be valid, readable, and consistent with the information provided in the application.
+
+2. ADDRESS VERIFICATION
+
+Customers may be required to provide an address document when the registered address cannot be verified through available records.
+
+Additional verification may be required when the information provided by the customer is inconsistent.
+
+3. RE-KYC
+
+Customers may be required to complete periodic KYC updates according to applicable policy and regulatory requirements.
+
+Customers must update their information when relevant identification or address details change.
+
+Customers may be required to provide updated documents during a KYC review.
+
+4. KYC VERIFICATION
+
+KYC verification may include:
+- Identity verification
+- Address verification
+- PAN verification
+- Document validation
+- Customer information matching
+
+Failure to complete required verification may result in restrictions until the verification process is completed.
+
+5. FRESHNESS INFORMATION
+
+Version: 1.0
+
+Effective Date: January 10, 2026
+
+Last Updated: January 10, 2026
+
+If a newer KYC policy version exists, FRESH-RAG should prefer the latest effective version for current-policy questions.
+
+This document is synthetic demo data created for the FRESH-RAG project.

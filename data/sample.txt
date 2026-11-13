@@ -1,7 +1,0 @@
-FRESH-RAG Sample Knowledge Document
-
-FRESH-RAG is an adaptive knowledge refresh and cost optimization engine for Retrieval-Augmented Generation systems.
-
-The system monitors knowledge freshness, identifies outdated information, and helps determine when documents should be refreshed.
-
-The goal is to maintain useful and current knowledge while reducing unnecessary processing and API costs.
