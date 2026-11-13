@@ -1,0 +1,55 @@
+CREDIT CARD TERMS
+
+Document ID: CCT-2026-01
+Version: 1.0
+Effective Date: January 10, 2026
+
+1. ANNUAL FEE
+
+Standard Credit Card Annual Fee: INR 999 plus applicable taxes.
+
+The annual fee may be waived when the customer meets the applicable annual spending threshold.
+
+2. INTEREST RATE
+
+Retail purchase interest rate: 3.25% per month.
+
+Interest may apply when the outstanding balance is not paid according to the applicable payment terms.
+
+The applicable rate is subject to the cardholder agreement.
+
+3. LATE PAYMENT
+
+Late payment charges may apply when the minimum amount due is not paid by the payment due date.
+
+The applicable late-payment charge depends on the outstanding amount and the current cardholder terms.
+
+4. CASH WITHDRAWAL
+
+Cash withdrawal transactions may attract:
+- Cash advance fee
+- Applicable interest
+- Other charges specified in the cardholder agreement
+
+Cash withdrawal limits are determined by the card's assigned credit limit and internal policy.
+
+5. CREDIT CARD ELIGIBILITY
+
+Credit card approval may depend on:
+- Applicant age
+- Income
+- Credit history
+- Identity verification
+- Internal risk assessment
+
+Submitting an application does not guarantee approval.
+
+6. DOCUMENT FRESHNESS
+
+Version: 1.0
+
+Effective Date: January 10, 2026
+
+Last Updated: January 10, 2026
+
+If a newer version of the credit card terms exists, FRESH-RAG should prefer the latest effective version when answering questions about current charges or terms.

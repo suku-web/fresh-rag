@@ -1,0 +1,61 @@
+LOAN POLICY
+
+Document ID: LP-2026-01
+Version: 1.0
+Effective Date: January 10, 2026
+
+1. HOME LOAN ELIGIBILITY
+
+Applicants must be at least 21 years old.
+
+Salaried applicants must have a minimum monthly income of INR 35,000.
+
+Applicants must provide:
+- Identity proof
+- Address proof
+- Income proof
+- Recent bank statements
+
+Loan approval depends on credit assessment, document verification, income stability, and internal risk checks.
+
+2. HOME LOAN LIMITS
+
+Minimum home loan amount: INR 5,00,000.
+
+Maximum standard home loan amount: INR 75,00,000.
+
+Maximum repayment tenure: 25 years.
+
+The final approved amount depends on the applicant's income, credit profile, repayment capacity, and property assessment.
+
+3. PERSONAL LOAN ELIGIBILITY
+
+Applicants must be at least 21 years old.
+
+Minimum monthly income requirement: INR 25,000.
+
+Applicants must have a regular source of income.
+
+Maximum standard personal loan amount: INR 15,00,000.
+
+Maximum repayment tenure: 7 years.
+
+4. LOAN APPROVAL CONDITIONS
+
+Loan approval is subject to:
+- Credit assessment
+- Identity verification
+- Income verification
+- Document verification
+- Internal risk checks
+
+Submitting a complete application does not guarantee loan approval.
+
+The lender may request additional documents when required.
+
+5. DOCUMENT FRESHNESS
+
+
+Last Updated: October 29, 2026.
+
+Minor clarification: Salaried home loan applicants must provide their latest three months of salary slips as additional income proof.

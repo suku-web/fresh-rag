@@ -1,0 +1,52 @@
+INTEREST RATES
+
+Document ID: IR-2026-01
+Version: 1.0
+Effective Date: January 10, 2026
+
+1. CURRENT RATES IN THIS DOCUMENT
+
+Home Loan Interest Rate: 8.50% per annum.
+
+Personal Loan Interest Rate: 11.50% per annum.
+
+Education Loan Interest Rate: 9.00% per annum.
+
+Senior Citizen Home Loan Interest Rate: 8.40% per annum for eligible customers.
+
+2. RATE CONDITIONS
+
+Interest rates may vary depending on:
+- Customer credit profile
+- Loan amount
+- Repayment tenure
+- Customer category
+- Internal lending policy
+
+The applicable interest rate is confirmed at the time of loan sanction.
+
+3. PREVIOUS RATE INFORMATION
+
+Before January 2026, the standard home loan interest rate was 8.25% per annum.
+
+The January 2026 rate increased the standard home loan rate to 8.50% per annum.
+
+4. FUTURE UPDATE SCENARIO
+
+This document represents the January 2026 version of the interest-rate information.
+
+A newer version may contain updated rates.
+
+When answering a question asking for the CURRENT interest rate, FRESH-RAG should check whether a newer document version exists.
+
+If the retrieved document is old or its freshness score is low, the Adaptive Engine may recommend REFRESH before generating the final answer.
+
+5. FRESHNESS INFORMATION
+
+Version: 1.0
+
+Effective Date: January 10, 2026
+
+Last Updated: January 10, 2026
+
+This document is synthetic demo data created for the FRESH-RAG project.

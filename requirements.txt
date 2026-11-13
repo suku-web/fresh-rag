@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+boto3
+python-dotenv
+python-multipart
+pydub
+pytest
+httpx
